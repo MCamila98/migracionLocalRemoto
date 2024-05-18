@@ -24,15 +24,23 @@ def update_data():
 root = tk.Tk()
 root.title("Database App")
 
+
+
 # Crear los widgets
 label = ttk.Label(root, text="Datos de la base de datos:")
 label.grid(row=0, column=0, padx=10, pady=10)
 
-treeview = ttk.Treeview(root, columns=("ID", "Nombre", "Edad"))
+treeview = ttk.Treeview(root, columns=( " ","ID","Nombre","apellidos" "Edad","email"))
 treeview.grid(row=1, column=0, padx=10, pady=10)
-treeview.heading("#0", text="ID")
-treeview.heading("#1", text="Nombre")
-treeview.heading("#2", text="Edad")
+treeview.heading("#0", text=" ")
+treeview.heading("#1", text="ID")
+treeview.heading("#2", text="Nombre")
+treeview.heading("#3", text="apellidos")
+treeview.heading("#4", text="Edad")
+treeview.heading("#5", text="email")
+
+update_button = ttk.Button(root, text="Actualizar", command=update_data)
+update_button.grid(row=2, column=0, padx=10, pady=10)
 
 update_button = ttk.Button(root, text="Actualizar", command=update_data)
 update_button.grid(row=2, column=0, padx=10, pady=10)

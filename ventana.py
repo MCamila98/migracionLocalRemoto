@@ -14,4 +14,7 @@ frame.pack(padx=10,pady=10)
 label= tk.Label(frame, text="label dentro de la interfaz")
 label.pack()
 
+
+
+
 ventana.mainloop()
